@@ -5,84 +5,62 @@
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 % \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
+\usepackage{NotoSerifCJKsc_external}
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{progressbar}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\Large{
+  \begin{tabu}{ c l l }
+   \multirow{5}{1in}{\includegraphics[width=0.88in]{avatar}} &
+   \scshape{李高阳} &  \\
+    & 性别：男 & 民族：汉 \\
+    & 电话：(+86) 15682897374 & 生日：1995-09 \\
+    & 邮箱：li.gaoyang@foxmail.com & 籍贯：甘肃宁县 \\
+    & 地址：甘肃省兰州市天水南路222号 \ \ \ \ \ \ \ \ \ \ \ \ \ \ & 政治面貌：党员
+  \end{tabu}
+}
 
-\basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\section{教育经历}
+% \textbf{兰州大学}
+\datedsubsection{\textbf{兰州大学\ 硕博连读与中科院兰州近物所联合培养博士}}{2013 -- 2019}
+\textit{专$\quad\ \ $业：理论物理}\\
+\textit{研究方向：使用数值重整化群方法对杂质系统进行数值计算研究}\\
+\textit{导$\quad\ \ $师：罗洪刚\ 教授（兰州大学） 李刚\ 研究员（近物所）}\\
+\textit{副\hspace{7\ccwd}导\hspace{7\ccwd}师：房铁峰\ 副教授（兰州大学）}
+\datedsubsection{\textbf{兰州大学\ 本科}}{2009 --  2013}
+\textit{专业：物理学国家基地班}
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
-\end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
-\end{onehalfspacing}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
-
-\section{\faCogs\ IT 技能}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
-
-\section{\faHeartO\ 获奖情况}
+\section{获奖情况}
 \datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
 \datedline{其他奖项}{2015}
 
-\section{\faInfo\ 其他}
+\section{参与科研项目}
+\begin{itemize}
+\item 自然科学杰出青年基金（11325417）：凝聚态理论与数值方法
+\item 自然科学面上基金（11174115）：少电子系统中电子关联的大尺度计算研究
+\item 自然科学面上基金（11674139）：量子杂质系统中的新奇量子态研究
+\end{itemize}
+
+\section{其他技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+\item 英语六级
+\item 数值重整化群算法（NRG）
+\item 擅长Fortran, C++, Shell, Python
+\end{itemize}
+
+\section{学术成果}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 使用数值重整化群方法研究了。我们发现了。
 \end{itemize}
 
 %% Reference
