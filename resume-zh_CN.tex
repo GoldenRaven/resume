@@ -17,13 +17,18 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
+\begin{center}
+\Huge{个~~~人~~~简~~~历}
+\end{center}
+\\ \ \\
+
 \Large{
   \begin{tabu}{ c l l }
    \multirow{5}{1in}{\includegraphics[width=0.88in]{avatar}} &
    \scshape{李高阳} &  \\
     & 性别：男 & 民族：汉 \\
     & 电话：(+86) 15682897374 & 生日：1995-09 \\
-    & 邮箱：li.gaoyang@foxmail.com & 政治面貌：党员\\
+    & 邮箱：li.gaoyang@foxmail.com & 微信：sandbox\_ligy\\
     & 地址：甘肃省兰州市天水南路222号 \hspace{40} & %籍贯：甘肃宁县
   \end{tabu}
 }
@@ -31,49 +36,38 @@
 \section{教育经历}
 % \textbf{兰州大学}
 \datedsubsection{\textbf{兰州大学\ 硕博连读与中科院兰州近物所联合培养博士}}{2013 -- 2019}
-\textit{专$\quad\ \ $业：理论物理}\\
-\textit{方$\quad\ \ $向：凝聚态理论}\\
-% \textit{导$\quad\ \ $师：罗洪刚\ 教授（兰州大学） 李刚\ 研究员（近物所）}\\
-\textit{导$\quad\ \ $师：罗洪刚\ 教授（兰州大学）}\\
-\textit{副\hspace{7\ccwd}导\hspace{7\ccwd}师：房铁峰\ 副教授（兰州大学）}
+\textit{专业：理论物理}\\
+\textit{方向：强关联量子系统的数值求解}
 \datedsubsection{\textbf{兰州大学\ 本科}}{2009 --  2013}
 \textit{专业：物理学国家基地班\ \ 理论物理}
-
-\section{研究内容}
-研究系统：量子杂质系统（量子点系统，掺杂石墨烯等）\\
-研究方法：全密度矩阵数值重整化群（FDM-NRG）\\
-研究内容：杂质系统中的量子相变，近腾效应（Kondo effect）\\
 
 \section{获奖情况}
 \datedline{\textit{国家励志奖学金}}{2010 -- 2011}
 % \datedline{其他奖项}{2015}
 
-\section{参与科研项目}
-\begin{itemize}
-\item 自然科学杰出青年基金（11325417）：凝聚态理论与数值方法
-\item 自然科学面上基金（11174115）：少电子系统中电子关联的大尺度计算研究
-\item 自然科学面上基金（11674139）：量子杂质系统中的新奇量子态研究
+\section{项目经验}
+\begin{itemize}%[parsep=0.5ex]
+\item \textbf{基于C++实现了全密度矩阵数值重整化群算法}\\
+独立完成了程序的编写，其中涉及矩阵乘法、稠密矩阵对角化等矩阵向量操作。实现中调用了Intel MKL库，并作了单节点OpenMP并行优化。该程序已可以用来求解一些量子杂质问题，部分研究成果已整理成学术论文，正在准备发表。
+\item \textbf{基于FORTRAN实现了模拟退火算法}\\
+针对一个有8个自变量的函数最小值问题，调研并实现了模拟退火算法，在变分求解Rabi模型的应用中达到了较好的结果。
+\item \textbf{能熟练使用Shell, Python等语言，并熟悉Linux编程环境}
 \end{itemize}
 
 \section{其他技能}
 % increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
+\begin{itemize}%[parsep=0.5ex]
 \item 英语六级
-\item 全密度矩阵数值重整化群算法（FDM-NRG）
-\item 擅长Fortran, C++, Shell, Python
+\item 自学能力强，平常编写代码要求尽量高效、美观，并用git管理代码
+\item 对机器学习感兴趣并学习了机器学习的基本理论
+\item 了解精确对角化、密度矩阵重整化群、蒙特卡罗、级联运动方程等数值计算方法
+% \item 喜欢打羽毛球
 \end{itemize}
 
-\section{学术成果}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-\item By applying the full density matrix numerical renormalization
-  group theory to magnetic graphene with an impurity, we find the
-  unconventional behavior of Kondo effect. Publication in preparation.
+\section{求职意向}
+\begin{itemize}%[parsep=0.5ex]
+\item 算法设计与实现、机器学习相关职位
 \end{itemize}
-
-% By applying full density matrix numerical RG theory to magnetic
-% graphene with spin-polarization, we find the anormal behavior of
-% Kondo effect.
 
 %% Reference
 % \newpage
